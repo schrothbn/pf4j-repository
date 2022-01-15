@@ -1,0 +1,18 @@
+version: "3"
+services:
+  pf4j-database:
+    image: mongo:latest
+    container_name: pf4j-db
+    ports:
+      - "27017:27017"
+  pf4j-repository:
+    image: bearbunz/pf4j-repository
+    container_name: pf4j-repo
+    ports:
+      - "8080:9091"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=docker"
+    links:
+      - pf4j-database
+    depends_on:
+      - pf4j-database
