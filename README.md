@@ -17,4 +17,4 @@ The provided docker-compose.yml can be used to start the backend-server. It uses
 
 
 # UI 
-WIP
+The UI is still WIP. It's based on Vite, Vue.js, Axios and Pinia and uses JWT-Authentication. 
