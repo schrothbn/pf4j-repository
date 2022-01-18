@@ -14,6 +14,7 @@
 
 	<modules>
 		<module>pf4j-repository-backend</module>
+		<module>pf4j-repository-ui</module>
 	</modules>
 
 </project>
