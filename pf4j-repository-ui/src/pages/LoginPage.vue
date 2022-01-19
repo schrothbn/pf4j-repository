@@ -35,7 +35,7 @@
 <script lang="ts">
 import {ref} from 'vue'
 import {useRouter} from 'vue-router'
-import {useAuthStore} from '@/stores/auth.module'
+import {useAuthStore} from '@/stores/auth-store'
 
 export default {
   name: "LoginPage",

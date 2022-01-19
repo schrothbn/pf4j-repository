@@ -5,7 +5,7 @@ import AppLayout from '@/layouts/AppLayout.vue'
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" style="background-color: cornsilk">
     <AppLayout/>
   </div>
 </template>

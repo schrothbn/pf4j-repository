@@ -1,7 +1,7 @@
 <template>
-        <div class="flex flex-col w-full md:w-64 text-gray-700 bg-white">
+        <div class="flex flex-col w-full md:w-64 text-green-700 ">
         <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between">
-            <a href="#" class="ext-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">{{title}}</a>
+            <a href="#" class="ext-lg font-semibold tracking-widest text-green-700 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">{{title}}</a>
             <button class="rounded-lg md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="toggleOpen">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                 <path v-if="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -10,9 +10,9 @@
             </button>
         </div>
         <nav :class="{ 'block' : open, 'hidden': !open}" class="flex-grow md:block px-4 pb-4 md:pb-0 md:overflow-y-auto">
-            <router-link to="/dashboard" class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg">Home</router-link>
-            <router-link to="/about" class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg">About</router-link>
-            <a href="#" @click="logout" class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg">Logout</a>
+            <router-link to="/" class="block px-4 py-2 mt-2 text-sm font-semibold text-green-900 bg-green-300 rounded-lg hover:bg-green-500">Home</router-link>
+            <router-link to="/about" class="block px-4 py-2 mt-2 text-sm font-semibold text-green-900 bg-green-300 rounded-lg hover:bg-green-500">About</router-link>
+            <a href="#" @click="logout" class="block px-4 py-2 mt-2 text-sm font-semibold text-green-900 bg-green-300 rounded-lg hover:bg-green-500">Logout</a>
         </nav>
     </div>
 
@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import {defineProps, ref} from 'vue'
-import {useAuthStore} from '@/stores/auth.module'
+import {useAuthStore} from '@/stores/auth-store'
 
 const store = useAuthStore()
 

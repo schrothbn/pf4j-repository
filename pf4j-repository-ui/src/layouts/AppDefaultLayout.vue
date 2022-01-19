@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import SidebarMenu from '@/components/SidebarMenu.vue'
-import { useAuthStore } from '@/stores/auth.module';
+import { useAuthStore } from '@/stores/auth-store';
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 const router = useRouter()
