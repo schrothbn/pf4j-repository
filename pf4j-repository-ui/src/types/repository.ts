@@ -1,3 +1,4 @@
 export interface Repository {
-    name: string
+    name: string,
+    pluginCount: number
 }
