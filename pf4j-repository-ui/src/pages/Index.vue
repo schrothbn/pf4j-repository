@@ -1,11 +1,10 @@
 <template>
-  <h1 class="text-3xl text-green-700 text-center">Welcome, {{ user.username }}</h1>
-  <Repositories/>
+  <Repositories />
 </template>
 
 <script setup lang="ts">
-import { useAuthStore } from '@/stores/auth-store'
-import Repositories from '@/components/Repositories.vue'
-const store = useAuthStore()
-const user = store.user
+import { useAuthStore } from "@/stores/auth-store";
+import Repositories from "@/components/Repositories.vue";
+const store = useAuthStore();
+const user = store.user;
 </script>

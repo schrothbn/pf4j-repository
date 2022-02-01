@@ -12,8 +12,7 @@ const user = JSON.parse(localStorage.getItem('user') as string) as User
 const initialState : AuthState = (user ?  { loggedIn: true , user }
 : { loggedIn: false , user: null})
 
-export const useAuthStore = defineStore({
-    id: 'authStore',
+export const useAuthStore = defineStore('authStore', {
     state: () => ( initialState ),
     actions: {
         login(user: string, password: string) {
