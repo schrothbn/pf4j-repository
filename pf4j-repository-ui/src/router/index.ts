@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory, RouteRecordRaw, RouterOptions} from 'vue-router'
 import Index from '@/pages/Index.vue'
-import About from '@/pages/About.vue'
+import PluginUpload from '@/pages/PluginUpload.vue'
 import LoginPage from '@/pages/LoginPage.vue'
 
 
@@ -19,9 +19,9 @@ const routes : Array<RouteRecordRaw> = [
         component: Index,
     } as RouteRecordRaw,
     {
-        path: '/about',
-        name: 'About',
-        component: About,
+        path: '/upload',
+        name: 'PluginUpload',
+        component: PluginUpload,
     } as RouteRecordRaw
 ]
 
