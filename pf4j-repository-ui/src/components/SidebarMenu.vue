@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-full md:w-64 text-white bg-gray-500 h-screen">
+  <div class="flex flex-col w-full md:w-64 text-white bg-gray-500">
     <div
       class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between"
     >

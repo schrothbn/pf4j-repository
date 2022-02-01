@@ -2,7 +2,7 @@
   <Header title="PF4J - Repository" />
   <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
     <SidebarMenu open="false" title="PF4J-Repository" />
-    <main class="container mx-2 my-4">
+    <main class="container mx-2 my-4 rounded-xl shadow-xl px-6 py-2">
       <slot />
     </main>
   </div>

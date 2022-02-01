@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col items-center justify-center gap-4">
-    <h3 class="text-2xl font-semibold italic">Repositories</h3>
-    <table class="table-auto border-collapse border-slate-400 w-full">
+    <h3 class="text-2xl text-gray-700 font-bold self-start">Repositories</h3>
+    <table
+      class="table-auto border-collapse border-slate-400 w-full text-gray-600"
+    >
       <thead class="bg-slate-200">
         <tr>
           <th class="border-b border-slate-300">Repository Name</th>

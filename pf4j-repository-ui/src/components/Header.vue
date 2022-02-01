@@ -1,5 +1,7 @@
 <template>
-  <div class="flex bg-gray-500 py-2 px-2 justify-between items-center">
+  <div
+    class="flex bg-gradient-to-b from-gray-800 to-gray-500 py-2 px-2 justify-between items-center"
+  >
     <a
       href="#"
       class="text-white hover:text-black ext-lg font-semibold tracking-widest uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
