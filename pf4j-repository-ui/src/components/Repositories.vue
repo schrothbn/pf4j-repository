@@ -25,11 +25,14 @@
         </tr>
       </tbody>
     </table>
-    <button
-      class="self-start bg-gray-500 rounded shadow text-white font-semibold py-2 px-2 hover:bg-gray-300 hover:text-black"
-    >
-      New Repository
-    </button>
+
+    <router-link :to="{ name: 'NewRepository' }">
+      <button
+        class="self-start bg-gray-500 rounded shadow text-white font-semibold py-2 px-2 hover:bg-gray-300 hover:text-black"
+      >
+        New Repository
+      </button>
+    </router-link>
   </div>
 </template>
 

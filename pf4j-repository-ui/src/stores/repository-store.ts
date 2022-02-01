@@ -18,12 +18,25 @@ const useRepositoryStore = defineStore({
     state: () => ( initialState ),
     actions: {
         fetch() {
-           repositoryService.getRepositories().then(
+           return repositoryService.getRepositories().then(
                (repos) => {
                    this.repositories = repos.data
                 },
-               (error) => console.log(error)
+               (error) => {
+                   throw error;
+               } 
            )
+        },
+        create(name: string) {
+            return repositoryService.createRepository(name).then(
+                (repo) => {
+                    this.repositories.push(repo);
+                },
+                (error) => {
+                    throw error; 
+                }
+            );
+
         }
 
     }
